@@ -11,6 +11,8 @@
 
   font-size: var(--base-font-size);
   font-family: 'Roboto Mono', monospace;
+
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
