@@ -17,8 +17,8 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  padding: 0 1em;
+  min-height: calc(100vh - 2em);
+  padding: 1em;
   width: calc(100% - 2em);
 
   background-color: var(--secondary-color);
