@@ -1,7 +1,11 @@
 {{ partial "header" . }}
-<div class="page paper">
-  {{ partial "nav" . }}
+<div class="page">
+  <div class="paper page__content">
+    {{ partial "nav" . }}
 
-  {{ .Content }}
+    {{ .Content }}
+
+    {{ partial "links" }}
+  </div>
 </div>
 {{ partial "footer" }}

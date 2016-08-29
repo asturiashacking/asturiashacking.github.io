@@ -44,33 +44,31 @@ body {
   margin-right: 10px;
 }
 
-.footer {
-  margin-top: 2em;
-}
-
 .footer__links {
   justify-content: center;
 }
 
 .page {
-  min-height: calc(100vh - 4em);
-  padding: 2em 3.5em;
-  width: calc(var(--base-width) - 7em);
+  min-height: calc(100vh - 2em);
+  padding: 1em;
+  width: calc(var(--base-width) - 2em);
 }
 
-.page--centered {
+.page__content {
   display: flex;
   flex-direction: column;
+}
 
-  justify-content: center;
-  text-align: center;
+.page__content__grower {
+  flex-grow: 1;
+  margin-bottom: 1em;
 }
 
 .header {
   align-items: center;
   display: flex;
   height: 70px;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .header__logo {
@@ -93,6 +91,8 @@ body {
 }
 
 .paper {
+  height: calc(100% - 4em);
+  padding: 2em 3.5em;
   position: relative;
 
   background-color: white;
