@@ -1,4 +1,3 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "es-es"
 title = "AsturiasHacking"
-theme = "asturiashacking"
