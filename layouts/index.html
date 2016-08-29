@@ -1,15 +1,7 @@
 {{ partial "header" . }}
 
-<div class="content-box content-box--centered">
-  <div class="content-box__box">
-    <header class="content-box__header">
-      <img class="content-box__logo" src="/img/logo.svg" alt="AsturiasHacking">
-      <nav class="content-box__nav">
-        <ul class="nav list">
-          <li class="list__item"><a href="/whoami/" class="link">whoami</a></li>
-        </ul>
-      </nav>
-    </header>
+<div class="page page--centered">
+    {{ partial "nav" . }}
     <div>
       <p>
         ¿Estás en Asturias y quieres charlar un rato sobre desarrollo de software? ¡Únete! Organizaremos charlas y
@@ -23,7 +15,6 @@
         <li class="list__item"><a href="https://meetup.com/asturiashacking" class="link">meetup</a></li>
       </ul>
     </footer>
-  </div>
 </div>
 
 {{ partial "footer" }}
