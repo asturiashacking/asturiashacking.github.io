@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+.list__item::after {
+  content: ';';
+  margin-left: -2px;
+}
+
+.list__item:not(:last-of-type) {
+  margin-right: 10px;
+}

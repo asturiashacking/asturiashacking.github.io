@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--base-font-size);
+  font-family: 'Roboto Mono', monospace;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--secondary-color);
+}
+
+.page {
+  min-height: calc(100vh - 2em);
+  padding: 1em;
+  width: calc(var(--base-width) - 2em);
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__content__grower {
+  flex-grow: 1;
+  margin-bottom: 1em;
+}

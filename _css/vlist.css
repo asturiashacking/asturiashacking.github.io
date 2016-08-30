@@ -1,0 +1,8 @@
+.vlist {
+  list-style-type: none;
+}
+
+.vlist__item::before {
+  content: '*';
+  margin-right: 1em;
+}

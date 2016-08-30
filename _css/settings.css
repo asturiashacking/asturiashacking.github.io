@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #0000ff;
+  --secondary-color: #303234;
+
+  --base-font-size: 18px;
+  --base-width: 1200px;
+
+  --small-breakpoint: 600px;
+}

@@ -1,0 +1,35 @@
+.paper {
+  height: calc(100% - 4em);
+  padding: 2em 3.5em;
+  position: relative;
+
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.paper::before {
+  left: -5px;
+  top: 4px;
+
+  background-color: #fafafa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transform: rotate(-2.5deg);
+}
+
+.paper::after {
+  right: -3px;
+  top: 1px;
+
+  background-color: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  transform: rotate(1.4deg);
+}
+
+.paper::after,
+.paper::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}

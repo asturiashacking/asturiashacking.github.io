@@ -1,0 +1,44 @@
+.header {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  margin-bottom: 3em;
+}
+
+.header__logo {
+  display: block;
+  height: 70px;
+  width: 70px;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .header__logo {
+    margin: 0 auto 1em;
+  }
+
+  .header__nav {
+    margin: 0 0 1em;
+  }
+
+  .header__nav::after {
+    content: '* * *';
+    display: block;
+    margin-top: 1em;
+  }
+
+  .header__nav__list {
+    justify-content: center;
+  }
+}
