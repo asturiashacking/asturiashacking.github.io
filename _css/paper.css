@@ -1,17 +1,28 @@
 .paper {
+  --front-bg-color: #f0f2f4;
+  --front-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  --middle-bg-color: #fafafa;
+  --middle-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+  --back-bg-color: #f6f6f6;
+  --back-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.paper {
   padding: 3em 3.5em;
   position: relative;
 
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--front-bg-color);
+  box-shadow: var(--front-box-shadow);
 }
 
 .paper::before {
   left: -5px;
   top: 4px;
 
-  background-color: #fafafa;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--middle-bg-color);
+  box-shadow:var(--middle-box-shadow);
   transform: rotate(-2.5deg);
 }
 
@@ -19,8 +30,8 @@
   right: -3px;
   top: 1px;
 
-  background-color: #f6f6f6;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: var(--back-bg-color);
+  box-shadow:var(--back-box-shadow);
   transform: rotate(1.4deg);
 }
 
