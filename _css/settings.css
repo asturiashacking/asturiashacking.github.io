@@ -6,3 +6,5 @@
 
   --base-width: 1200px;
 }
+
+@custom-media --small-viewport screen and (max-width: 600px);

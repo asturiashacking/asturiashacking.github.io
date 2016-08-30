@@ -44,7 +44,7 @@
   z-index: -1;
 }
 
-@media screen and (max-width: 600px) {
+@media (--small-viewport) {
   .paper {
     padding: 2em 1em;
   }
