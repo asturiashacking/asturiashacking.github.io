@@ -1,14 +1,14 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var cssnano = require('cssnano');
 var importer = require('postcss-import')
+var cssnext = require('postcss-cssnext');
+var cssnano = require('cssnano');
 
 gulp.task('css', function() {
   var processors = [
     importer(),
-    autoprefixer(),
-    cssnano(),
+    cssnext(),
+    cssnano()
   ];
 
   return gulp.src('./_css/main.css')
