@@ -1,2 +1,5 @@
 .DS_Store
 public
+node_modules
+static/css/*
+!static/css/.gitkeep
