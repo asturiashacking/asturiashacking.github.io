@@ -1,28 +1,28 @@
-.paper {
-  --front-bg-color: #f0f2f4;
-  --front-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+:root {
+  --front-page-bg-color: #f0f2f4;
+  --front-page-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
-  --middle-bg-color: #fafafa;
-  --middle-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  --middle-page-bg-color: #fafafa;
+  --middle-page-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 
-  --back-bg-color: #f6f6f6;
-  --back-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  --back-page-bg-color: #f6f6f6;
+  --back-page-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .paper {
   padding: 3em 3.5em;
   position: relative;
 
-  background-color: var(--front-bg-color);
-  box-shadow: var(--front-box-shadow);
+  background-color: var(--front-page-bg-color);
+  box-shadow: var(--front-page-box-shadow);
 }
 
 .paper::before {
   left: -5px;
   top: 4px;
 
-  background-color: var(--middle-bg-color);
-  box-shadow:var(--middle-box-shadow);
+  background-color: var(--middle-page-bg-color);
+  box-shadow:var(--middle-page-box-shadow);
   transform: rotate(-2.5deg);
 }
 
@@ -30,8 +30,8 @@
   right: -3px;
   top: 1px;
 
-  background-color: var(--back-bg-color);
-  box-shadow:var(--back-box-shadow);
+  background-color: var(--back-page-bg-color);
+  box-shadow:var(--back-page-box-shadow);
   transform: rotate(1.4deg);
 }
 
