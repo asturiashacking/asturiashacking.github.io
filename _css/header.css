@@ -15,7 +15,6 @@
   margin-left: auto;
 }
 
-
 @media screen and (max-width: 600px) {
   .header {
     display: block;

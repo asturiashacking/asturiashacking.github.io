@@ -1,18 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-
-  font-size: var(--base-font-size);
-  font-family: 'Roboto Mono', monospace;
-
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
   display: flex;
+  font-size: var(--base-font-size);
   justify-content: center;
 
   background-color: var(--secondary-color);
+  font-family: 'Roboto Mono', monospace;
+
+  -webkit-text-size-adjust: 100%;
 }
 
 .page {

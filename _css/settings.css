@@ -2,8 +2,7 @@
   --primary-color: #0000ff;
   --secondary-color: #303234;
 
-  --base-font-size: 18px;
-  --base-width: 1200px;
+  --base-font-size: 16px;
 
-  --small-breakpoint: 600px;
+  --base-width: 1200px;
 }
