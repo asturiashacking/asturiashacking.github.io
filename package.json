@@ -1,0 +1,25 @@
+{
+  "name": "asturiashacking-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asturiashacking/asturiashacking.github.io.git"
+  },
+  "author": "Sergio Álvarez <sergioalvarezsuarez@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asturiashacking/asturiashacking.github.io/issues"
+  },
+  "homepage": "https://github.com/asturiashacking/asturiashacking.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "cssnano": "^3.7.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1"
+  }
+}
