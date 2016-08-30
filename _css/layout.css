@@ -4,9 +4,7 @@
 }
 
 body {
-  display: flex;
   font-size: var(--base-font-size);
-  justify-content: center;
 
   background-color: var(--secondary-color);
   font-family: 'Roboto Mono', monospace;
@@ -15,14 +13,20 @@ body {
 }
 
 .page {
-  min-height: calc(100vh - 2em);
+  display: flex;
+  flex-direction: column;
   padding: 1em;
+  margin: 0 auto;
+  max-width: calc(100% - 2em);
+  min-height: calc(100vh - 2em);
+  overflow-y: hidden;
   width: calc(var(--base-width) - 2em);
 }
 
 .page__content {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .page__content__grower {
