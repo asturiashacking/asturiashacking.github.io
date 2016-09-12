@@ -15,10 +15,10 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 2em 1em;
   margin: 0 auto;
   max-width: calc(100% - 2em);
-  min-height: calc(100vh - 2em);
+  min-height: calc(100vh - 4em);
   overflow-y: hidden;
   width: calc(var(--base-width) - 2em);
 }
@@ -32,4 +32,8 @@ body {
 .page__content__grower {
   flex-grow: 1;
   margin-bottom: 1em;
+}
+
+.page__box {
+  margin: 1em 0;
 }
