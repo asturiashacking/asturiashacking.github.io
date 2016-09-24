@@ -16,6 +16,14 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./static/css'));
 });
 
-gulp.task('watch', function() {
+gulp.task('server', function(cb) {
+  var spawn = require('child_process').spawn;
+
+  spawn('hugo', ['server', '--bind=0.0.0.0'], { stdio: 'inherit' }).on('close', function (code) {
+    if (code !== 0) {
+      cb(code);
+    }
+  });
+
   return gulp.watch('./_css/**/*.css', ['css']);
 });
