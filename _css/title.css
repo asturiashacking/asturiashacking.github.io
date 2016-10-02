@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: '---';
+  line-height: 0.5em;
+}
