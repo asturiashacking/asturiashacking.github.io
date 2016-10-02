@@ -2,7 +2,11 @@
   list-style-type: none;
 }
 
+.vlist__item {
+  display: flex;
+}
+
 .vlist__item::before {
   content: '*';
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
