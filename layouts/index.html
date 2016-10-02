@@ -1,18 +1,29 @@
-{{ partial "header" . }}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>~ | asturiashacking</title>
 
-<div class="page">
-  <div class="page__content">
-    {{ partial "nav" . }}
-    <div class="page__content__grower">
-      <p>¿estás en asturias y quieres charlar un rato sobre desarrollo de software? ¡únete! organizaremos charlas y
-      talleres, hackearemos un rato, intercambiaremos información y ejecutaremos proyectos open
-      source para tratar de mejorar nuestro entorno y la sociedad en la que vivimos.</p>
-      <div class="page__box box">
-        <p>próximo meetup: <a class="link" href="http://www.meetup.com/AsturiasHacking/events/234237502/" target="_blank">29/09/2016 lean coffee</a></p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+
+    {{ template "_internal/google_analytics.html" . }}
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__content">
+        {{ partial "nav" . }}
+        <div class="page__content__grower">
+          <p>¿estás en asturias y quieres charlar un rato sobre desarrollo de software? ¡únete! organizaremos charlas y
+          talleres, hackearemos un rato, intercambiaremos información y ejecutaremos proyectos open
+          source para tratar de mejorar nuestro entorno y la sociedad en la que vivimos.</p>
+          <div class="page__box box">
+            <p>próximo meetup: <a class="link" href="http://www.meetup.com/AsturiasHacking/events/234237502/" target="_blank">29/09/2016 lean coffee</a></p>
+          </div>
+        </div>
+        {{ partial "links" }}
       </div>
     </div>
-    {{ partial "links" }}
-  </div>
-</div>
 
-{{ partial "footer" }}
+    {{ partial "footer" }}
