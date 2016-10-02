@@ -1,9 +1,11 @@
 @import './settings.css';
 
+@import './article.css';
 @import './box.css';
 @import './header.css';
 @import './layout.css';
 @import './link.css';
 @import './list.css';
+@import './subtitle.css';
 @import './title.css';
 @import './vlist.css';
