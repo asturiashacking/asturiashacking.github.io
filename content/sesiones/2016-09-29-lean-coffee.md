@@ -3,7 +3,6 @@ title = "lean coffee"
 date = "2016-09-29"
 +++
 
-
 # 2016-09-29 Lean Coffee
 
 Temas tratados durante la reunión:
@@ -16,7 +15,7 @@ Temas tratados durante la reunión:
 
 ## Integración y Entrega continua
 
-Se comenzó con un repaso general sobre las diferencias entre Integración, Entrega y Despliegue continuo para continuar con un debate sobre las diferentes estrategias y su encaje en la empresa (con herramientas como [Jenkins](https://jenkins.io/)).
+Se comenzó con un repaso general sobre las diferencias entre *Integración*, *Entrega* y *Despliegue* continuo para seguir con un debate sobre las diferentes estrategias y su encaje en la empresa (con herramientas como [Jenkins](https://jenkins.io/)).
 
 * ¿Qué necesita una empresa para poder implementar un sistema de despliegue continuo?
 * ¿Son estas metodologías beneficiosas para todo tipo de empresas y equipos?
