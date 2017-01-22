@@ -28,10 +28,17 @@
 }
 
 .article ul {
+  padding-left: 1em;
+
   list-style-type: none;
+}
+
+.article ul li:not(:first-of-type) {
+  margin-top: 1em;
 }
 
 .article ul li::before {
   content: '*';
   margin-right: 0.5em;
+  margin-left: -1em;
 }
