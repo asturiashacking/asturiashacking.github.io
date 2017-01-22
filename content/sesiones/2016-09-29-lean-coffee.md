@@ -3,7 +3,7 @@ title = "lean coffee"
 date = "2016-09-29"
 +++
 
-# 2016-09-29 Lean Coffee
+# 20160929 Lean Coffee
 
 Temas tratados durante la reunión:
 

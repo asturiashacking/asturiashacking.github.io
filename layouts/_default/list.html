@@ -9,7 +9,7 @@
       <ul class="vlist">
       {{ range .Data.Pages }}
         <li class="vlist__item">
-          <a href="{{ .Permalink }}" class="link">{{ .Date.Format "2006-01-02" }}: {{ .Title }}</a>
+          <a href="{{ .Permalink }}" class="link">{{ .Date.Format "20060102" }} {{ .Title }}</a>
         </li>
       {{ end }}
       </ul>
