@@ -1,9 +1,11 @@
 .vlist {
+  margin: 1em 0;
+
   list-style-type: none;
 }
 
-.vlist__item {
-  display: flex;
+.vlist__item:not(:first-of-type) {
+  margin-top: 0.5em;
 }
 
 .vlist__item::before {

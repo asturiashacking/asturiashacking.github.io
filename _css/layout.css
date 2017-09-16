@@ -8,6 +8,7 @@ body {
 
   background-color: var(--secondary-color);
   font-family: 'Roboto Mono', monospace;
+  text-transform: lowercase;
 
   -webkit-text-size-adjust: 100%;
 }
