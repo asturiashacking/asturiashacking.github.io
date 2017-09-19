@@ -4,6 +4,10 @@
   list-style-type: none;
 }
 
+.vlist .vlist {
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
 .vlist__item:not(:first-of-type) {
   margin-top: 0.5em;
 }
