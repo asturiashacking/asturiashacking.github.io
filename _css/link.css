@@ -2,3 +2,8 @@
   color: var(--primary-color);
   text-decoration: none;
 }
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
