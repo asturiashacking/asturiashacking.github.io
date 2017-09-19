@@ -5,7 +5,13 @@
 }
 
 .vlist .vlist {
-  margin: 0.5em 0 0.5em 1.5em;
+  --nested-list-margin-top-bottom: 0.5em;
+
+  margin: var(--nested-list-margin-top-bottom) 0 var(--nested-list-margin-top-bottom) 1.5em;
+}
+
+.vlist__item {
+  overflow-wrap: break-word;
 }
 
 .vlist__item:not(:first-of-type) {
