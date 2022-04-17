@@ -1,26 +1,31 @@
 {
-  "name": "asturiashacking-web",
+  "name": "asturiashacking.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "next build && next export",
+    "export": "next build && next export",
+    "ci:test": "npm run test",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "dev": "next dev",
+    "start": "next build && next start",
+    "test": "start-server-and-test start http://localhost:3000 cy:run"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/asturiashacking/asturiashacking.github.io.git"
+  "dependencies": {
+    "@mdx-js/loader": "1.6.22",
+    "@next/mdx": "12.1.5",
+    "next": "12.1.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "author": "AsturiasHacking <asturiashacking@gmail.com>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/asturiashacking/asturiashacking.github.io/issues"
-  },
-  "homepage": "https://github.com/asturiashacking/asturiashacking.github.io#readme",
   "devDependencies": {
-    "cssnano": "^3.7.4",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^6.1.1",
-    "postcss-cssnext": "^2.7.0",
-    "postcss-import": "^8.1.2"
+    "cypress": "9.5.4",
+    "prettier": "2.6.2",
+    "start-server-and-test": "1.14.0"
+  },
+  "prettier": {
+    "proseWrap": "always"
   }
 }

@@ -1,33 +1,58 @@
-# asturiashacking.github.io
+# Sitio web de AsturiasHacking
 
-Este repositorio contiene el código fuente para la página web oficial de [AsturiasHacking](http://asturiashacking.org). El sitio web está construido utilizando el generador [Hugo](https://gohugo.io/) y servido desde [Github Pages](https://pages.github.com/)
+![Twitter](https://img.shields.io/twitter/follow/AsturiasHacking?style=social)
 
+Este proyecto contiene el código fuente para el [sitio web oficial][website] de
+[AsturiasHacking][saraos]. La aplicación está construida utilizando las
+siguientes tecnologías: [React][react], [NEXT.js][next] y [MDX][mdx].
 
-## Organización del repositorio
+# Desarrollo
 
-* `source`: contiene el código fuente del sitio web. Todos los desarrollos sobre la aplicación deben partir de esta rama y deben terminar mergeados en ella.
-* `master`: contiene el sitio web estático generado por Hugo. Esta rama es la que utiliza Github Pages para servir la información. Su contenido **nunca** se debe modificar manualmente. Todos los cambios se producen mediante la utilización del *script* `deploy.sh` que se encuentra en la rama `source`.
+Como cualquier otro proyecto Node, lo primero es instalar las dependencias a
+través del comando: `npm install`. Después, puedes arrancar un servidor de
+desarrollo a través del comando: `npm run dev`, esto debería hacer que una
+versión local de la web de AsturiasHacking se cargue en la URL:
+<http://localhost:3000>.
 
-## Dependencias
+## Cómo crear una nueva página
 
-Para poder ejecutar el proyecto, sólo es necesario tener instalados [Docker y Docker Compose](https://docs.docker.com/engine/installation/#installation) (disponibles para Windows, macOS y Linux).
+Los ficheros `.mdx` bajo la carpeta `pages` se convierten automáticamente en
+nuevas páginas en la web. Puedes utilizar como referencia algún otro fichero
+`.mdx` para ver cómo configurar correctamente el layout.
 
-## Ejecución del proyecto
+## ¿Dónde están los componentes?
 
-Con todas las dependencias instaladas, sólo será necesario ejecutar la siguiente orden en una terminal (desde el directorio raíz del proyecto): `docker-compose up`. La primera vez que se ejecute la orden anterior, es posible que el proceso tarde unos cuantos minutos (dependiendo de la velocidad de conexión a Internet), pero será el momento en que Docker esté instalando todas las dependecias para ejecutar el proyecto.
+Los componentes reutilizables se encuentran bajo la carpeta `components`. Todos
+los elementos situados en esa carpeta deben ser _context-free_ y, por tanto,
+potencialmente utilizables en cualquier página de la web. Algunos componentes ya
+disponibles son:
 
-Cuando el proceso de instalación termine, el sitio web se estará siriviendo en la siguiente dirección: `http://localhost:1313`.
+- Títulos
+- Listas
+- Enlaces
 
-## Otras tecnologías
+## Cómo estilar los componentes React
 
-### Gulp
+Para los estilos, estamos utilizando [styled-jsx][styled-jsx] (una
+implementación de Vercel para CSS-in-JS), que viene integrado por defecto en
+NEXT.js.
 
-Se utiliza para el procesamiento de CSS mediante [PostCSS](http://postcss.org/). `docker-compose up` se encarga de arrancar la tarea `server` definida en el `gulpfile.js` para procesar los ficheros CSS y levantar el entorno de Hugo.
+# Testing
 
-### PostCSS
+Como el sitio web es 100% estático y no tiene ninguna lógica de negocio, hay una
+pequeña capa de [smoke tests][smoke-testing] construidos utilizando
+[Cypress][cypress]. Los test se pueden ejecutar localmente a través del comando:
+`npm run test`. Además, se ejecutarán automáticamente utilizando GitHub Actions
+con cada nuevo _push_ y _pull request_.
 
-Los plugins de PostCSS soportados son:
+Puedes ver los tests bajo la carpeta `cypress/integration`.
 
-* [cssnano](http://cssnano.co/)
-* [cssnext](http://cssnext.io/)
-* [postcss-import](https://github.com/postcss/postcss-import)
+[website]: https://asturiashacking.org
+[saraos]: https://saraos.tech/@asturiashacking
+[react]: https://reactjs.org/
+[next]: https://nextjs.org/
+[mdx]: https://mdxjs.com/
+[styled-jsx]: https://github.com/zeit/styled-jsx
+[smoke-testing]: https://en.wikipedia.org/wiki/Smoke_testing_(software)
+[cypress]: https://www.cypress.io/
+[actions]: https://github.com/features/actions

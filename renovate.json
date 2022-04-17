@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base"
+  ],
+
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "automerge": true
+    }
+  ]
+}
