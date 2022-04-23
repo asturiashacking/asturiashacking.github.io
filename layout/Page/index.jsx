@@ -7,6 +7,7 @@ import Bullet from "../../components/Bullet";
 import Bullets from "../../components/Bullets";
 import Link from "../../components/Link";
 import Heading from "../../components/Heading";
+import Nav from "./components/Nav";
 import Text from "../../components/Text";
 
 import { withTheme } from "../../components/withTheme";
@@ -39,18 +40,10 @@ function Page({ children, theme }) {
       <article>
         <header>
           <a href="/">
-            <img src="/logo.svg" />
+            <img alt="AsturiasHacking" src="/logo.svg" />
           </a>
 
-          <nav>
-            <ul>
-              <li>
-                <a href="/dojos">
-                  <span>~/dojos</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <Nav />
         </header>
 
         <MDXProvider
@@ -84,44 +77,6 @@ function Page({ children, theme }) {
 
         header > a > img {
           max-width: 200px;
-        }
-
-        header > nav > ul {
-          list-style-type: none;
-          margin: 2em 0 0;
-          padding: 0;
-        }
-
-        header > nav > ul > li:not(:last-of-type) {
-          margin-bottom: 1em;
-        }
-
-        header > nav > ul > li {
-          font-family: ${theme.typography.families.monospace};
-        }
-
-        header > nav > ul > li > span {
-          opacity: 0.3;
-          margin-right: 0.5em;
-        }
-
-        header > nav > ul > li > a {
-          color: currentColor;
-
-          text-decoration: none;
-        }
-
-        header > nav > ul > li > a::before {
-          content: "cd";
-
-          margin-right: 0.5em;
-
-          opacity: 0.3;
-          text-decoration: none;
-        }
-
-        header > nav > ul > li > a > span {
-          text-decoration: underline;
         }
 
         article {
