@@ -39,9 +39,7 @@ function Page({ children, theme }) {
 
       <article>
         <header>
-          <a href="/">
-            <img alt="AsturiasHacking" src="/logo.svg" />
-          </a>
+          <img alt="AsturiasHacking" src="/logo.svg" />
 
           <Nav />
         </header>
@@ -75,7 +73,7 @@ function Page({ children, theme }) {
           padding: 3em 1em 1em;
         }
 
-        header > a > img {
+        header > img {
           max-width: 200px;
         }
 
