@@ -26,6 +26,7 @@
     "start-server-and-test": "1.14.0"
   },
   "prettier": {
-    "proseWrap": "always"
+    "proseWrap": "always",
+    "printWidth": 120
   }
 }
