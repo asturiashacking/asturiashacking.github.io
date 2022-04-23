@@ -15,7 +15,7 @@ function Page({ children, theme }) {
   return (
     <>
       <Head>
-        <title>~ | AsturiasHacking</title>
+        <title>~ | AsturiasHacking</title>
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
