@@ -13,6 +13,6 @@ jobs:
           node-version: "16"
           cache: "npm"
       - run: "npm install"
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v7.4.3
         with:
           command: "npm run ci:test"
